@@ -1,1 +1,38 @@
-/* Egen custom CSS här */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+#grid_wrapper {
+    display: grid;
+    height: 100vh;
+    gap: 2px;
+    grid-template-columns: 10fr;
+    grid-template-rows: 100px, 50px, 300px, minmax(100px,1fr);
+    grid-template-areas: 
+    "hea"
+    "nav"
+    "sec"
+    "foo"
+}
+
+header {
+    grid-area: hea;
+    background-color: black;
+}
+
+nav {
+    grid-area: nav;
+    background-color: aqua;
+}
+
+footer {
+    grid-area: foo;
+    background-color: brown;
+}
+
+#se_1_1 {
+    grid-area: sec;
+}
