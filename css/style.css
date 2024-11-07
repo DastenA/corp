@@ -9,18 +9,18 @@
     display: grid;
     height: 100vh;
     gap: 2px;
-    grid-template-columns: 10fr;
-    grid-template-rows: 100px, 50px, 300px, minmax(100px,1fr);
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 100px 300px 300px minmax(100px,1fr);
     grid-template-areas: 
-    "hea"
-    "nav"
-    "sec"
-    "foo"
+    "hea hea"
+    "nav sec_1"
+    "nav sec_1"
+    "foo foo"
 }
 
 header {
     grid-area: hea;
-    background-color: black;
+    background-color:gold
 }
 
 nav {
@@ -34,5 +34,6 @@ footer {
 }
 
 #se_1_1 {
-    grid-area: sec;
+    grid-area: sec_1;
+    background-color: khaki;
 }
