@@ -24,7 +24,12 @@ header {
 
 nav {
     grid-area: nav;    
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0; 
+    list-style-type: none; 
 }
 
 footer {
@@ -35,6 +40,3 @@ footer {
     grid-area: sec_1;
 }
 
-li {
-    justify-content: space-around;
-}
