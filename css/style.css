@@ -20,20 +20,21 @@
 
 header {
     grid-area: hea;
-    background-color:gold
 }
 
 nav {
-    grid-area: nav;
-    background-color: aqua;
+    grid-area: nav;    
+
 }
 
 footer {
     grid-area: foo;
-    background-color: brown;
 }
 
 #se_1_1 {
     grid-area: sec_1;
-    background-color: khaki;
+}
+
+li {
+    justify-content: space-around;
 }
