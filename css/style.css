@@ -5,7 +5,7 @@
     
 }
 
-#grid_wrapper {
+/*#grid_wrapper {
     display: grid;
     height: 100vh;
     gap: 2px;
@@ -13,8 +13,8 @@
     grid-template-rows: 100px 300px 300px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea"
-    "nav sec_1"
-    "nav sec_1"
+    "nav sec_1_1"
+    "nav sec_1_2"
     "foo foo"
 }
 
@@ -37,6 +37,52 @@ footer {
 }
 
 #se_1_1 {
-    grid-area: sec_1;
+    grid-area: sec_1_1;
 }
 
+#se_1_2 {
+    grid-area: sec_1_2;
+}
+*/
+
+
+
+#blackjack_body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#hit {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#stay {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+}
+
+
+
+
+#canvas {
+    border: 2px solid black;
+}
+
+#return_canvas {
+    text-align: center;
+}
