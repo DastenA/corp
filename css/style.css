@@ -46,7 +46,7 @@ footer {
 */
 
 
-
+/* BLACKJACK */
 #blackjack_body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -79,6 +79,7 @@ footer {
 
 
 
+/* CANVAS */
 #canvas {
     border: 2px solid black;
 }
