@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
 }
+
+
 
 /*#grid_wrapper {
     display: grid;
@@ -43,8 +44,7 @@ footer {
 #se_1_2 {
     grid-area: sec_1_2;
 }
-*/
-
+/*
 
 /* BLACKJACK */
 #blackjack_body {
@@ -77,13 +77,19 @@ footer {
 }
 
 
-
-
 /* CANVAS */
 #canvas {
     border: 2px solid black;
 }
 
-#return_canvas {
+
+#paint_sec {
     text-align: center;
+}
+
+
+/* PLACEHOLDER */
+#se_placeholder {
+    text-align: center;
+
 }
