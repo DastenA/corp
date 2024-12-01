@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -18,9 +19,10 @@
     "nav sec_1_2"
     "foo foo"
 }
-
+*/
 header {
     grid-area: hea;
+    border: 2px solid black;
 }
 
 nav {
@@ -31,20 +33,26 @@ nav {
     align-items: center;
     padding: 0; 
     list-style-type: none; 
+    border: 2px solid black;
 }
 
 footer {
     grid-area: foo;
+    border: 2px solid black;
 }
 
 #se_1_1 {
     grid-area: sec_1_1;
+    border: 2px solid black;
+
 }
 
 #se_1_2 {
     grid-area: sec_1_2;
+    border: 2px solid black;
+
 }
-/*
+
 
 /* BLACKJACK */
 #blackjack_body {

@@ -78,6 +78,41 @@
         </div>
       </div>
     </section>
+    
+    <section>
+      <div>
+        <canvas id="myChart" width="800" height="600"></canvas>
+      </div>
+      <div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+          const ctx = document.getElementById('myChart');
+        
+          new Chart(ctx, {
+            type: 'pie',
+            data: {
+              labels: ['Action', 'Strategy', 'Sports', 'Sandbox', 'Art', 'Card'],
+              datasets: [{
+                label: '# of Votes',
+                data: [0, 0, 0, 0, 1, 1],
+                borderWidth: 3,
+                hoverBackgroundColor: "yellow",
+                borderColor: "blue"
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
+        
+      </div>
+    </section>
 
     <footer class="bg-success p-3 text-center">
       <p>FOOTER</p>
