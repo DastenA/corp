@@ -5,6 +5,9 @@
     
 }
 
+body {
+    background-color: black;
+}
 
 
 /*#grid_wrapper {
@@ -97,8 +100,13 @@ footer {
 
 
 /* PLACEHOLDER */
+#placeholder_body {
+    background-color: white;
+}
+
 #se_placeholder {
     text-align: center;
     font-size: 30px;
     height: 100vh;
 }
+

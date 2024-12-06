@@ -23,7 +23,7 @@
   <div>
     
     <header class="m-0 bg-success p-3 text-center">
-      <p>HEADER</p>
+      <p>Flash Point</p>
     </header>
 
     <nav class="bg-warning text-center m-0">
@@ -88,16 +88,28 @@
 
         <script>
           const ctx = document.getElementById('myChart');
-        
+          function beforePrintHandler () {
+        for (let id in Chart.instances) {
+            Chart.instances[id].resize();
+          }
+          }
+
+          window.addEventListener('beforeprint', () => {
+            myChart.resize(300, 300);
+          });
+          window.addEventListener('afterprint', () => {
+            myChart.resize();
+          });
+
           new Chart(ctx, {
             type: 'pie',
             data: {
-              labels: ['Action', 'Strategy', 'Sports', 'Sandbox', 'Art', 'Card'],
+              labels: ['Art', 'Card'],
               datasets: [{
                 label: '# of Votes',
-                data: [0, 0, 0, 0, 1, 1],
+                data: [1, 1],
                 borderWidth: 3,
-                hoverBackgroundColor: "yellow",
+                backgroundColor: ["yellow", "aqua"],
                 borderColor: "blue"
               }]
             },
