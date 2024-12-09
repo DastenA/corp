@@ -9,6 +9,17 @@ body {
     background-color: black;
 }
 
+img {
+    border: 2px solid black; 
+    width: 100%;
+    height: auto;
+      
+}
+
+img:hover {
+    border: 5px solid rgb(255, 255, 255); 
+}
+
 
 /*#grid_wrapper {
     display: grid;
@@ -110,8 +121,13 @@ footer {
     height: 100vh;
 }
 
+/* CHARTS */
+#se_1_3 {
+    align-items: center;
+    justify-content: center;
+}
+
 #myChart {
     width: 25% !important;
-    height: 100% !important;
 
 }
