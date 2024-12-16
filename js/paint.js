@@ -4,8 +4,8 @@ window.addEventListener("load", () => {
     const ctx = canvas.getContext("2d")
 
     //resizing
-    canvas.height = window.innerHeight
-    canvas.width = window.innerWidth
+    canvas.height = 550
+    canvas.width = 1275
 
 
     //variables  
@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
         if (!painting) return
         ctx.lineWidth = 20
         ctx.lineCap = "round"
-        ctx.strokeStyle = "aqua"
+        ctx.strokeStyle = "orange"
 
         ctx.lineTo(e.clientX, e.clientY)
         ctx.stroke()
