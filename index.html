@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/breakpoints.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,7 +23,7 @@
   <div>
     <header class="m-0 bg-primary p-3 text-center">
 
-    <a href="index.html"><svg width="259" height="31" viewBox="0 0 259 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <a href="index.html"><svg width="259" height="31" viewBox="0 0 259 31" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg_logo">
       <g id="FLASH_POINT">
           <mask id="path-1-outside-1_13_2" maskUnits="userSpaceOnUse" x="-1" y="-1" width="261" height="33" fill="black">
               <rect fill="white" x="-1" y="-1" width="261" height="33"/>
@@ -48,73 +47,95 @@
                   </filter>
                   </defs>
                   </svg></a>
-        
+                  <script>
+                    const svgLogo = document.getElementById('svg_logo');
+            
+                    svgLogo.addEventListener('mouseover', () => {
+                        // Add the animation class on hover
+                        svgLogo.classList.add('animate');
+                    });
+            
+                    svgLogo.addEventListener('animationend', () => {
+                        // Remove the animation class once it completes
+                        svgLogo.classList.remove('animate');
+                    });
+                </script>
     </header>
 
     <nav class="bg-secondary text-center m-0">
       <ul class="nav p-2 justify-content-center">
-        <li class="nav-item p-2"><a href="placeholder.html">- Action (Work in progress)</a></li>
+        <li class="nav-item p-2"><a class="nav_text" href="placeholder.html">- Action (Work in progress)</a></li>
 
-        <li class="nav-item p-2"><a href="placeholder.html">- Strategy (Work in progress)</a></li>
+        <li class="nav-item p-2"><a class="nav_text" href="placeholder.html">- Strategy (Work in progress)</a></li>
 
-        <li class="nav-item p-2"><a href="placeholder.html">- Sports (Work in progress)</a></li>
+        <li class="nav-item p-2"><a class="nav_text" href="placeholder.html">- Sports (Work in progress)</a></li>
 
-        <li class="nav-item p-2"><a href="placeholder.html">- Sandbox (Work in progress)</a></li>
+        <li class="nav-item p-2"><a class="nav_text" href="placeholder.html">- Sandbox (Work in progress)</a></li>
 
-        <li class="nav-item p-2"><a href="paint.html">- Art </a></li>
+        <li class="nav-item p-2"><a class="nav_text" href="paint.html">- Art </a></li>
 
-        <li class="nav-item p-2"><a href="blackjack.html">- Card</a></li>
-
-        <input type="text" placeholder="Search.." size="40">
+        <li class="nav-item p-2"><a class="nav_text" href="blackjack.html">- Card</a></li>
       </ul>
+      <input type="text" placeholder="Search.." size="40">
+
     </nav>
     
 
-      <section id="se_1_1" class="bg-light m-0">
-        <div class="row m-0">
-          <div class="col-6 col-md-3">
-            <p class="text-center">Blackjack</p>
-            <a href="blackjack.html"><img src="img/blackjack_3.png" class="card-img-top img-fluid" alt="placeholder"></a>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="text-center">Paint</p>
-            <a href="paint.html"><img src="img/paint_3.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="text-center">Kaiju Wars</p>
-            <a href="placeholder.html"><img src="img/kaiju_1.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
-          </div>
-          <div class="col-6 col-md-3">
-            <p class="text-center">Planet simulator</p>
-            <a href="placeholder.html"><img src="img/doodle_1.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
-          </div>
+    <section id="se_1_1" class="bg-light m-0">
+      <div class="row m-0">
+        <div class="col-6 col-md-3 p-2">
+          <p class="game_name text-center">Blackjack</p>
+          <a href="blackjack.html" aria-label="View Blackjack game">
+            <img src="img/blackjack_3.png" class="gallery_img img-fluid uniform-img" alt="Blackjack game screenshot">
+          </a>
         </div>
-      </section>
+        <div class="col-6 col-md-3 p-2">
+          <p class="game_name text-center">Paint</p>
+          <a href="paint.html" aria-label="View Paint game">
+            <img src="img/paint_1.jpg" class="gallery_img img-fluid uniform-img" alt="Paint game screenshot">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 p-2">
+          <p class="game_name text-center">Kaiju Wars</p>
+          <a href="placeholder.html" aria-label="View Kaiju Wars game">
+            <img src="img/kaiju_1.jpg" class="gallery_img img-fluid uniform-img" alt="Kaiju Wars game screenshot">
+          </a>
+        </div>
+        <div class="col-6 col-md-3 p-2">
+          <p class="game_name text-center">Planet simulator</p>
+          <a href="placeholder.html" aria-label="View Planet Simulator game">
+            <img src="img/doodle_1.jpg" class="gallery_img img-fluid uniform-img" alt="Planet simulator game screenshot">
+          </a>
+        </div>
+      </div>
+    </section>
+    
 
     <section id="se_1_2" class="bg-light m-0">
       <div class="row m-0">
         <div class="col-6 col-md-3">
-          <p class="text-center">Pixel Paws</p>
-          <a href="placeholder.html"><img src="img/pet_1.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
+          <p class="game_name text-center">Pixel Paws</p>
+          <a href="placeholder.html"><img src="img/pet_1.jpg" class="gallery_img card-img-top img-fluid" alt="placeholder pet game img"></a>
         </div>
         <div class="col-6 col-md-3">
-          <p class="text-center">Castle Chaos</p>
-          <a href="placeholder.html"><img src="img/castle_2.jpg.png" class="card-img-top img-fluid" alt="placeholder"></a>
+          <p class="game_name text-center">Castle Chaos</p>
+          <a href="placeholder.html"><img src="img/castle_1.jpg" class="gallery_img card-img-top img-fluid" alt="placeholder castle game img"></a>
         </div>
         <div class="col-6 col-md-3">
-          <p class="text-center">Cowboy Life</p>
-          <a href="placeholder.html"><img src="img/cowboy_1.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
+          <p class="game_name text-center">Cowboy Life</p>
+          <a href="placeholder.html"><img src="img/cowboy_1.jpg" class="gallery_img card-img-top img-fluid" alt="placeholder cowboy game img"></a>
         </div>
         <div class="col-6 col-md-3">
-          <p class="text-center">Pollen Patrol</p>
-          <a href="placeholder.html"><img src="img/bee_1.jpg" class="card-img-top img-fluid" alt="placeholder"></a>
+          <p class="game_name text-center">Pollen Patrol</p>
+          <a href="placeholder.html"><img src="img/bee_1.jpg" class="gallery_img card-img-top img-fluid" alt="placeholder bee game img"></a>
         </div>
       </div>
     </section>
 
     <footer class="bg-dark p-3 text-center">
-      <p>&copy;FOOTER</p>
-      <a href="charts.html">Charts</a>
+      <a class="footer_text" href="charts.html">Charts</a>
+      <p class="footer_text">&copy;FOOTER</p>
+
     </footer>
 
   </div>
